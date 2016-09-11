@@ -1,7 +1,7 @@
 {
   "name": "bibtex-helper",
   "main": "./lib/bibtex-helper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Autocompletes BibTeX citation formats",
   "keywords": [
     "autocomplete",
