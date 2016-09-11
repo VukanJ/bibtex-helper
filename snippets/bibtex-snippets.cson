@@ -1,0 +1,196 @@
+'.text.bibtex':
+  'Article':
+    'prefix': 'article'
+    'body': """
+      @article{${1:link},
+        author  = {},
+        title   = {},
+        journal = {},
+        year    = {},
+        number  = {},
+        pages   = {},
+        month   = {},
+        note    = {},
+        volume  = {}
+      }
+    """
+  'Book':
+    'prefix': 'book'
+    'body': """
+      @book{${1:link},
+        author    = {},
+        title     = {},
+        publisher = {},
+        year      = {},
+        volume    = {},
+        series    = {},
+        address   = {},
+        edition   = {},
+        month     = {},
+        note      = {},
+        isbn      = {}
+      }
+    """
+  'Booklet':
+    'prefix': 'booklet'
+    'body': """
+      @booklet{${1:link},
+        title        = {},
+        author       = {},
+        howpublished = {},
+        address      = {},
+        month        = {},
+        year         = {},
+        note         = {}
+      }
+    """
+  'Conference':
+    'prefix': 'conference'
+    'body': """
+      @conference{${1:link},
+        author       = {},
+        title        = {},
+        booktitle    = {},
+        year         = {},
+        editor       = {},
+        volume       = {},
+        series       = {},
+        pages        = {},
+        address      = {},
+        month        = {},
+        organization = {},
+        publisher    = {},
+        note         = {}
+      }
+    """
+  'Inbook':
+    'prefix': 'inbook'
+    'body': """
+      @inbook{${1:link},
+        author    = {},
+        title     = {},
+        chapter   = {},
+        pages     = {},
+        publisher = {},
+        year      = {},
+        volume    = {},
+        series    = {},
+        address   = {},
+        edition   = {},
+        month     = {},
+        note      = {}
+      }
+    """
+  'In Collection':
+    'prefix': 'incollection'
+    'body': """
+      @incollection{${1:link},
+        author    = {},
+        title     = {},
+        booktitle = {},
+        publisher = {},
+        year      = {},
+        editor    = {},
+        volume    = {},
+        series    = {},
+        chapter   = {},
+        pages     = {},
+        address   = {},
+        edition   = {},
+        month     = {},
+        note      = {}
+      }
+    """
+  'Manual':
+    'prefix':'manual'
+    'body': """
+      @manual{${1:link},
+        title        = {},
+        author       = {},
+        organization = {},
+        address      = {},
+        edition      = {},
+        month        = {},
+        year         = {},
+        note         = {}
+      }
+    """
+  'Masterthesis':
+    'prefix': 'masterthesis'
+    'body': """
+      @mastersthesis{${1:link},
+        author  = {},
+        title   = {},
+        school  = {},
+        year    = {},
+        address = {},
+        month   = {},
+        note    = {}
+      }
+    """
+  'Miscellaneous':
+    'prefix': 'miscellaneous'
+    'body': """
+      @misc{${1:link},
+        author       = {},
+        title        = {},
+        howpublished = {},
+        month        = {},
+        year         = {},
+        note         = {}
+      }
+    """
+  'Phd Thesis':
+    'prefix': 'phdthesis'
+    'body': """
+      @phdthesis{${1:link},
+        author  = {},
+        title   = {},
+        school  = {},
+        year    = {},
+        address = {},
+        month   = {},
+        note    = {}
+      }
+    """
+  'Proceedings':
+    'prefix': 'proceedings'
+    'body': """
+      @proceedings{${1:link},
+        title        = {},
+        year         = {},
+        editor       = {},
+        volume       = {},
+        series       = {},
+        address      = {},
+        month        = {},
+        organization = {},
+        publisher    = {},
+        note         = {}
+      }
+    """
+  'Technical Report':
+    'prefix': 'techreport'
+    'body': """
+      @techreport{${1:link},
+        author       = {},
+        title        = {},
+        institution  = {},
+        year         = {},
+        number       = {},
+        address      = {},
+        month        = {},
+        note         = {}
+      }
+    """
+  'Unpublished':
+    'prefix': 'unpublished'
+    'body': """
+      @unpublished{${1:link},
+        author  = {},
+        title   = {},
+        note    = {},
+        month   = {},
+        year    = {}
+      }
+    """

@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle bibtex-helper",
+        "command": "bibtex-helper:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "bibtex-helper",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "bibtex-helper:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

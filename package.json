@@ -1,0 +1,28 @@
+{
+  "name": "bibtex-helper",
+  "main": "./lib/bibtex-helper",
+  "version": "0.0.0",
+  "description": "Autocompletes BibTeX citation formats",
+  "keywords": [
+    "autocomplete",
+    "bibtex",
+    "latex",
+    "luatex",
+    "lualatex",
+    "citation",
+    "cite",
+    "biber",
+    "snippet"
+  ],
+  "activationCommands": {
+    "atom-workspace": "bibtex-helper:toggle"
+  },
+  "repository": "https://github.com/atom/bibtex-helper",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "dependencies": {
+    "language-latex": "^0.6.1"
+  }
+}
