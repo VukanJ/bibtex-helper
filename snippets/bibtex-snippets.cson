@@ -5,13 +5,17 @@
       @article{${1:link},
         author  = {},
         title   = {},
-        journal = {},
         year    = {},
+        journal = {},
+
+        series  = {},
+        volume  = {},
         number  = {},
+        issue   = {},
         pages   = {},
         month   = {},
-        note    = {},
-        volume  = {}
+        pages   = {},
+        note    = {}
       }
     """
   'Book':
@@ -20,6 +24,25 @@
       @book{${1:link},
         author    = {},
         title     = {},
+        year      = {},
+
+        volume    = {},
+        edition   = {},
+        series    = {},
+        number    = {},
+        month     = {},
+        publisher = {},
+        note      = {},
+        isbn      = {}
+      }
+    """
+  'Multi-volume book':
+    'prefix': 'mvbook'
+    'body': """
+      @mvbook{${1:link},
+        author    = {},
+        title     = {},
+        subtitle  = {},
         publisher = {},
         year      = {},
         volume    = {},
@@ -81,10 +104,46 @@
         note      = {}
       }
     """
-  'In Collection':
-    'prefix': 'incollection'
+  'Book in Book':
+    'prefix': 'bookinbook'
     'body': """
-      @incollection{${1:link},
+      @bookinbook{${1:link},
+        author    = {},
+        title     = {},
+        chapter   = {},
+        pages     = {},
+        publisher = {},
+        year      = {},
+        volume    = {},
+        series    = {},
+        address   = {},
+        edition   = {},
+        month     = {},
+        note      = {}
+      }
+    """
+  'Supplemental material in book':
+    'prefix': 'suppbook'
+    'body': """
+      @suppbook{${1:link},
+        author    = {},
+        title     = {},
+        chapter   = {},
+        pages     = {},
+        publisher = {},
+        year      = {},
+        volume    = {},
+        series    = {},
+        address   = {},
+        edition   = {},
+        month     = {},
+        note      = {}
+      }
+    """
+  'Collection':
+    'prefix': 'collection'
+    'body': """
+      @collection{${1:link},
         author    = {},
         title     = {},
         booktitle = {},
@@ -101,6 +160,66 @@
         note      = {}
       }
     """
+    'In collection':
+      'prefix': 'incollection'
+      'body': """
+        @incollection{${1:link},
+          editor    = {},
+          title     = {},
+          booktitle = {},
+          publisher = {},
+          year      = {},
+          editor    = {},
+          volume    = {},
+          series    = {},
+          chapter   = {},
+          pages     = {},
+          address   = {},
+          edition   = {},
+          month     = {},
+          note      = {}
+        }
+      """
+    'Multi-volume Collection':
+      'prefix': 'mvcollection'
+      'body': """
+        @mvcollection{${1:link},
+          author    = {},
+          title     = {},
+          booktitle = {},
+          publisher = {},
+          year      = {},
+          editor    = {},
+          volume    = {},
+          series    = {},
+          chapter   = {},
+          pages     = {},
+          address   = {},
+          edition   = {},
+          month     = {},
+          note      = {}
+        }
+      """
+    'Supplemental material in collection':
+      'prefix': 'suppcollection'
+      'body': """
+        @suppcollection{${1:link},
+          author    = {},
+          title     = {},
+          booktitle = {},
+          publisher = {},
+          year      = {},
+          editor    = {},
+          volume    = {},
+          series    = {},
+          chapter   = {},
+          pages     = {},
+          address   = {},
+          edition   = {},
+          month     = {},
+          note      = {}
+        }
+      """
   'Manual':
     'prefix':'manual'
     'body': """
@@ -115,6 +234,19 @@
         note         = {}
       }
     """
+    'Thesis':
+      'prefix': 'thesis'
+      'body': """
+        @thesis{${1:link},
+          author  = {},
+          title   = {},
+          school  = {},
+          year    = {},
+          address = {},
+          month   = {},
+          note    = {}
+        }
+      """
   'Masterthesis':
     'prefix': 'masterthesis'
     'body': """
@@ -129,7 +261,7 @@
       }
     """
   'Miscellaneous':
-    'prefix': 'miscellaneous'
+    'prefix': 'misc'
     'body': """
       @misc{${1:link},
         author       = {},
@@ -138,6 +270,67 @@
         month        = {},
         year         = {},
         note         = {}
+      }
+    """
+  'Online resource':
+    'prefix': 'online'
+    'body': """
+      @online{${1:link},
+        author       = {},
+        title        = {},
+        subtitle     = {},
+        organization = {},
+        month        = {},
+        year         = {},
+        month        = {},
+        note         = {},
+        url          = {},
+        urldate      = {}
+      }
+    """
+  'Patent':
+    'prefix': 'patent'
+    'body': """
+      @patent{${1:link},
+        author       = {},
+        title        = {},
+        number       = {},
+        year         = {},
+
+        holder       = {},
+        note         = {}
+      }
+    """
+  'Periodical':
+    'prefix': 'periodical'
+    'body': """
+      @periodical{${1:link},
+        editor       = {},
+        title        = {},
+        year         = {},
+        series       = {},
+        volume       = {},
+        number       = {},
+        issue        = {},
+        date         = {},
+        note         = {},
+        doi          = {}
+      }
+    """
+  'Supplemental material in Periodical':
+    'prefix': 'suppperiodical'
+    'body': """
+      @suppperiodical{${1:link},
+        editor       = {},
+        title        = {},
+        year         = {},
+        series       = {},
+        volume       = {},
+        number       = {},
+        issue        = {},
+        date         = {},
+        note         = {},
+        doi          = {}
       }
     """
   'Phd Thesis':
@@ -169,6 +362,32 @@
         note         = {}
       }
     """
+  'Multi-volume proceedings':
+    'prefix': 'mvproceedings'
+    'body': """
+      @mvproceedings{${1:link},
+        title        = {},
+        year         = {},
+        editor       = {},
+        volume       = {},
+        series       = {},
+        address      = {},
+        month        = {},
+        organization = {},
+        publisher    = {},
+        note         = {}
+      }
+    """
+  'Article in conference proceeding':
+    'prefix': 'inproceedings'
+    'body': """
+      @inproceedings{${1:link},
+        author       = {},
+        title        = {},
+        booktitle    = {},
+        year         = {},
+      }
+    """
   'Technical Report':
     'prefix': 'techreport'
     'body': """
@@ -183,6 +402,86 @@
         note         = {}
       }
     """
+  'Reference':
+    'prefix': 'reference'
+    'body': """
+      @reference{${1:link},
+        author    = {},
+        title     = {},
+        booktitle = {},
+        publisher = {},
+        year      = {},
+        editor    = {},
+        volume    = {},
+        series    = {},
+        chapter   = {},
+        pages     = {},
+        address   = {},
+        edition   = {},
+        month     = {},
+        note      = {}
+      }
+    """
+    'Multi-volume Reference':
+      'prefix': 'mvreference'
+      'body': """
+        @mvreference{${1:link},
+          author    = {},
+          title     = {},
+          booktitle = {},
+          publisher = {},
+          year      = {},
+          editor    = {},
+          volume    = {},
+          series    = {},
+          chapter   = {},
+          pages     = {},
+          address   = {},
+          edition   = {},
+          month     = {},
+          note      = {}
+        }
+      """
+    'In Reference':
+      'prefix': 'inreference'
+      'body': """
+        @inreference{${1:link},
+          author    = {},
+          title     = {},
+          booktitle = {},
+          publisher = {},
+          year      = {},
+          editor    = {},
+          volume    = {},
+          series    = {},
+          chapter   = {},
+          pages     = {},
+          address   = {},
+          edition   = {},
+          month     = {},
+          note      = {}
+        }
+      """
+    'Report':
+      'prefix': 'report'
+      'body': """
+        @reference{${1:link},
+          author    = {},
+          title     = {},
+          booktitle = {},
+          publisher = {},
+          year      = {},
+          editor    = {},
+          volume    = {},
+          series    = {},
+          chapter   = {},
+          pages     = {},
+          address   = {},
+          edition   = {},
+          month     = {},
+          note      = {}
+        }
+      """
   'Unpublished':
     'prefix': 'unpublished'
     'body': """
