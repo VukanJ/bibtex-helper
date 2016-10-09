@@ -429,7 +429,7 @@
   'Report':
     'prefix': 'report'
     'body': """
-      @reference{${1:link},
+      @report{${1:link},
         author      = {},
         title       = {},
         type        = {},
@@ -548,7 +548,7 @@
         note        = {}
       }
     """
-  'Online resource':
+  'Online resource(2)':
     'prefix': 'www'
     'body': """
       @www{${1:link},
